@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 23 15:50:49 GMT+05:30 2024</td>
+</tr>
+<tr><td>Total time:</td><td>230 seconds (230632 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Donate page through Menu and Link in Homepage", "Login as a Individual in HomerFund"</td>
+<td><div><pre>java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_donation_page_after_access_through_donate_link(StepDefsIndividualUser.java:152)
+	at ✽.Validate the &quot;Individual&quot; user Successfully redirects to Donation page after access through Donate link(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:73)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1538929055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1538929055'><pre>java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_donation_page_after_access_through_donate_link(StepDefsIndividualUser.java:152)
+	at ✽.Validate the &quot;Individual&quot; user Successfully redirects to Donation page after access through Donate link(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:73)
+</pre></div></td>
+<td>54</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that new User Home page Presents with Welcome Message and Make donation button", "Login as a Individual in HomerFund"</td>
+<td><div><pre>java.lang.AssertionError: Home Page is not loaded or check the Web Element...!!! expected [Make a new one time donation] but found []
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_see_the_welcome_message_as_a_new_user(StepDefsIndividualUser.java:51)
+	at ✽.Validate the user able to see the welcome message as a new user(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:19)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace760319916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace760319916'><pre>java.lang.AssertionError: Home Page is not loaded or check the Web Element...!!! expected [Make a new one time donation] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_see_the_welcome_message_as_a_new_user(StepDefsIndividualUser.java:51)
+	at ✽.Validate the user able to see the welcome message as a new user(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:19)
+</pre></div></td>
+<td>21</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Individual user create Recurring donation and verify the latest donation present in Home Page", "Login as a Individual in HomerFund"</td>
+<td><div><pre>java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the &quot;Individual&quot; user Successfully redirects to Review page after &quot;Unconditional RecurringDonation&quot;(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:37)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1463877021", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1463877021'><pre>java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the &quot;Individual&quot; user Successfully redirects to Review page after &quot;Unconditional RecurringDonation&quot;(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:37)
+</pre></div></td>
+<td>68</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Popup when user enter donation with an amount greater than 500 in Recurring Donation", "Login as a Individual in HomerFund"</td>
+<td><div><pre>java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the &quot;Individual&quot; user Successfully redirects to Review page after &quot;Conditional RecurringDonation&quot;(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:44)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace569686170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace569686170'><pre>java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the &quot;Individual&quot; user Successfully redirects to Review page after &quot;Conditional RecurringDonation&quot;(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:44)
+</pre></div></td>
+<td>55</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Login and Logout of the application with "Individual" credentials", "Login as a Individual in HomerFund"</td>
+<td></td>
+<td>31</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate success message after successful donation and to check Go Back Home link", "Login as a Individual in HomerFund"</td>
+<td></td>
+<td>18</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Individual User create One time donation", "Login as a Individual in HomerFund"</td>
+<td></td>
+<td>35</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Confirmation page", "Login as a Individual in HomerFund"</td>
+<td></td>
+<td>26</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Dashboard in Homepage", "Login as a Individual in HomerFund"</td>
+<td></td>
+<td>29</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Popup when user enter donation with an amount greater than 5000 in One Time donation", "Login as a Individual in HomerFund"</td>
+<td></td>
+<td>17</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that Existing user home page presents Latest Donation and Edit donation button", "Login as a Individual in HomerFund"</td>
+<td></td>
+<td>20</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Popup when user enter donation amount in decimal", "Login as a Individual in HomerFund"</td>
+<td></td>
+<td>30</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+<tr>
+<td title='org.thd.hfcm.runner.CucumberRunnerTests.runScenario()'><b>runScenario</b><br>Test class: org.thd.hfcm.runner.CucumberRunnerTests<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the amount increase decrease button", "Login as a Individual in HomerFund"</td>
+<td></td>
+<td>32</td>
+<td>org.thd.hfcm.runner.CucumberRunnerTests@402bba4f</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="231.733" tests="13" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\THD_GithubProjects\ICC-HFCM_SeleniumTestingAutomation\ICC-HFCM_SeleniumTestingAutomation\HomerFundContributionManager\target\test-classes;C:\THD_GithubProjects\ICC-HFCM_SeleniumTestingAutomation\ICC-HFCM_SeleniumTestingAutomation\HomerFundContributionManager\target\classes;C:\Users\SXP8EWG\.m2\repository\net\masterthought\cucumber-reporting\5.7.4\cucumber-reporting-5.7.4.jar;C:\Users\SXP8EWG\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\SXP8EWG\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\SXP8EWG\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\SXP8EWG\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\SXP8EWG\.m2\repository\joda-time\joda-time\2.10.14\joda-time-2.10.14.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\SXP8EWG\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar;C:\Users\SXP8EWG\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\SXP8EWG\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\SXP8EWG\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\SXP8EWG\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\SXP8EWG\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\SXP8EWG\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\SXP8EWG\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\SXP8EWG\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\SXP8EWG\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20211018.2\owasp-java-html-sanitizer-20211018.2.jar;C:\Users\SXP8EWG\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\SXP8EWG\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SXP8EWG\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\SXP8EWG\.m2\repository\org\aeonbits\owner\owner-java8\1.0.12\owner-java8-1.0.12.jar;C:\Users\SXP8EWG\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-java\7.16.1\cucumber-java-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-core\7.16.1\cucumber-core-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-gherkin\7.16.1\cucumber-gherkin-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.16.1\cucumber-gherkin-messages-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\datatable\7.16.1\datatable-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-plugin\7.16.1\cucumber-plugin-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\docstring\7.16.1\docstring-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\html-formatter\21.3.0\html-formatter-21.3.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\junit-xml-formatter\0.3.0\junit-xml-formatter-0.3.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-testng\7.16.1\cucumber-testng-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-java\4.19.1\selenium-java-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-api\4.19.1\selenium-api-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.19.1\selenium-chrome-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.19.1\selenium-chromium-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-json\4.19.1\selenium-json-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.19.1\selenium-manager-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.19.1\selenium-devtools-v121-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.19.1\selenium-devtools-v122-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.19.1\selenium-devtools-v123-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.19.1\selenium-devtools-v85-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.19.1\selenium-edge-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.19.1\selenium-firefox-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-http\4.19.1\selenium-http-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.19.1\selenium-ie-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.19.1\selenium-remote-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-api\1.36.0\opentelemetry-api-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-context\1.36.0\opentelemetry-context-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.36.0\opentelemetry-exporter-logging-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.36.0\opentelemetry-sdk-common-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.36.0\opentelemetry-sdk-extension-autoconfigure-spi-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.36.0\opentelemetry-sdk-extension-autoconfigure-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.36.0-alpha\opentelemetry-api-events-1.36.0-alpha.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.36.0\opentelemetry-sdk-trace-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.36.0-alpha\opentelemetry-extension-incubator-1.36.0-alpha.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.36.0\opentelemetry-sdk-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.36.0\opentelemetry-sdk-metrics-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.36.0\opentelemetry-sdk-logs-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-os\4.19.1\selenium-os-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.19.1\selenium-safari-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-support\4.19.1\selenium-support-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\testng\testng\7.10.1\testng-7.10.1.jar;C:\Users\SXP8EWG\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\SXP8EWG\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\SXP8EWG\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-picocontainer\7.16.1\cucumber-picocontainer-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\SXP8EWG\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\SXP8EWG\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\SXP8EWG\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\SXP8EWG\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\SXP8EWG\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\SXP8EWG\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\SXP8EWG\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\SXP8EWG\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\SXP8EWG\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\SXP8EWG\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\SXP8EWG\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\SXP8EWG\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\SXP8EWG\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\SXP8EWG\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\SXP8EWG\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\SXP8EWG\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\SXP8EWG\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\SXP8EWG\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\SXP8EWG\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="GMT+05:30"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\SXP8EWG\AppData\Local\Temp\6\surefire4283308781744507391\surefirebooter-20241023155046269_3.jar C:\Users\SXP8EWG\AppData\Local\Temp\6\surefire4283308781744507391 2024-10-23T15-50-45_974-jvmRun1 surefire-20241023155046269_1tmp surefire_0-20241023155046269_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\THD_GithubProjects\ICC-HFCM_SeleniumTestingAutomation\ICC-HFCM_SeleniumTestingAutomation\HomerFundContributionManager\target\test-classes;C:\THD_GithubProjects\ICC-HFCM_SeleniumTestingAutomation\ICC-HFCM_SeleniumTestingAutomation\HomerFundContributionManager\target\classes;C:\Users\SXP8EWG\.m2\repository\net\masterthought\cucumber-reporting\5.7.4\cucumber-reporting-5.7.4.jar;C:\Users\SXP8EWG\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\SXP8EWG\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\SXP8EWG\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\SXP8EWG\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\SXP8EWG\.m2\repository\joda-time\joda-time\2.10.14\joda-time-2.10.14.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\SXP8EWG\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar;C:\Users\SXP8EWG\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\SXP8EWG\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\SXP8EWG\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\SXP8EWG\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\SXP8EWG\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\SXP8EWG\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\SXP8EWG\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\SXP8EWG\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\SXP8EWG\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20211018.2\owasp-java-html-sanitizer-20211018.2.jar;C:\Users\SXP8EWG\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\SXP8EWG\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SXP8EWG\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\SXP8EWG\.m2\repository\org\aeonbits\owner\owner-java8\1.0.12\owner-java8-1.0.12.jar;C:\Users\SXP8EWG\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-java\7.16.1\cucumber-java-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-core\7.16.1\cucumber-core-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-gherkin\7.16.1\cucumber-gherkin-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.16.1\cucumber-gherkin-messages-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\datatable\7.16.1\datatable-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-plugin\7.16.1\cucumber-plugin-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\docstring\7.16.1\docstring-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\html-formatter\21.3.0\html-formatter-21.3.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\junit-xml-formatter\0.3.0\junit-xml-formatter-0.3.0.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-testng\7.16.1\cucumber-testng-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-java\4.19.1\selenium-java-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-api\4.19.1\selenium-api-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.19.1\selenium-chrome-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.19.1\selenium-chromium-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-json\4.19.1\selenium-json-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.19.1\selenium-manager-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.19.1\selenium-devtools-v121-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.19.1\selenium-devtools-v122-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.19.1\selenium-devtools-v123-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.19.1\selenium-devtools-v85-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.19.1\selenium-edge-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.19.1\selenium-firefox-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-http\4.19.1\selenium-http-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.19.1\selenium-ie-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.19.1\selenium-remote-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-api\1.36.0\opentelemetry-api-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-context\1.36.0\opentelemetry-context-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.36.0\opentelemetry-exporter-logging-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.36.0\opentelemetry-sdk-common-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.36.0\opentelemetry-sdk-extension-autoconfigure-spi-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.36.0\opentelemetry-sdk-extension-autoconfigure-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.36.0-alpha\opentelemetry-api-events-1.36.0-alpha.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.36.0\opentelemetry-sdk-trace-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.36.0-alpha\opentelemetry-extension-incubator-1.36.0-alpha.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.36.0\opentelemetry-sdk-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.36.0\opentelemetry-sdk-metrics-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.36.0\opentelemetry-sdk-logs-1.36.0.jar;C:\Users\SXP8EWG\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-os\4.19.1\selenium-os-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.19.1\selenium-safari-driver-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\seleniumhq\selenium\selenium-support\4.19.1\selenium-support-4.19.1.jar;C:\Users\SXP8EWG\.m2\repository\org\testng\testng\7.10.1\testng-7.10.1.jar;C:\Users\SXP8EWG\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\SXP8EWG\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\SXP8EWG\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\SXP8EWG\.m2\repository\io\cucumber\cucumber-picocontainer\7.16.1\cucumber-picocontainer-7.16.1.jar;C:\Users\SXP8EWG\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\SXP8EWG\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\SXP8EWG\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\SXP8EWG\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\SXP8EWG\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\SXP8EWG\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\SXP8EWG\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\SXP8EWG\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\SXP8EWG\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\SXP8EWG\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\SXP8EWG\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\SXP8EWG\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\SXP8EWG\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\SXP8EWG\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\SXP8EWG\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\SXP8EWG\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\SXP8EWG\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\SXP8EWG\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\SXP8EWG\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\SXP8EWG\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\SXP8EWG\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\SXP8EWG\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\SXP8EWG"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\THD_GithubProjects\ICC-HFCM_SeleniumTestingAutomation\ICC-HFCM_SeleniumTestingAutomation\HomerFundContributionManager"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\SXP8EWG\AppData\Local\Temp\6\surefire4283308781744507391\surefirebooter-20241023155046269_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.name" value="SXP8EWG"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\SXP8EWG\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\SXP8EWG\AppData\Local\Temp\6\"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="C:\THD_GithubProjects\ICC-HFCM_SeleniumTestingAutomation\ICC-HFCM_SeleniumTestingAutomation\HomerFundContributionManager"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/SXP8EWG/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.12.v20240802-1518/jre/bin/server;C:/Users/SXP8EWG/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.12.v20240802-1518/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Citrix\HDX\bin\;C:\Program Files\Citrix\HDX\bin\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\SXP8EWG\AppData\Local\Microsoft\WindowsApps;C:\Users\SXP8EWG\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-21\bin;C:\apache-maven-3.9.9\bin;;C:\Users\SXP8EWG\eclipse\committers-2024-03\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Validate the Dashboard in Homepage&quot;, &quot;Login as a Individual in HomerFund&quot;](1)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="29.733">
+    <system-out><![CDATA[
+@all @individual @IndividualDashboardFields
+Scenario: Validate the Dashboard in Homepage                                               &amp#27;[90m# src/test/resources/features/IndividualUser.feature:13&amp#27;[0m
+
+@all @individual @individualLoginpage
+Scenario: Validate Login and Logout of the application with "Individual" credentials &amp#27;[90m# src/test/resources/features/IndividualUser.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                          &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                        &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate the Dashboard has all the expected fields in Homepage as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_dashboard_has_all_the_expected_fields_in_homepage_as_user(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mLogged out Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                         &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                  &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate user logged in Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                     &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.validate_user_logged_in_successfully(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mLogged out Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                   &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Oct 23, 2024 3:51:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:51:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Oct 23, 2024 3:51:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:51:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Login and Logout of the application with &quot;Individual&quot; credentials&quot;, &quot;Login as a Individual in HomerFund&quot;](2)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="1.36">
+    <system-out><![CDATA[
+@all @individual @IndividualNewDonation
+Scenario: Validate that new User Home page Presents with Welcome Message and Make donation button &amp#27;[90m# src/test/resources/features/IndividualUser.feature:18&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate that new User Home page Presents with Welcome Message and Make donation button&quot;, &quot;Login as a Individual in HomerFund&quot;](3)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="20.357">
+    <failure message="Home Page is not loaded or check the Web Element...!!! expected [Make a new one time donation] but found []" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Home Page is not loaded or check the Web Element...!!! expected [Make a new one time donation] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_see_the_welcome_message_as_a_new_user(StepDefsIndividualUser.java:51)
+	at ✽.Validate the user able to see the welcome message as a new user(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:19)
+]]></failure>
+    <system-out><![CDATA[
+@all @individual @IndividualEditExistingDonation
+Scenario: Validate that Existing user home page presents Latest Donation and Edit donation button &amp#27;[90m# src/test/resources/features/IndividualUser.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                       &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                       &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                               &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate the user able to see the latest message as a Existing user&amp#27;[0m                        &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_see_the_latest_message_as_a_existing_user()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                               &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mValidate the user able to Edit Previous Donation as Existing user&amp#27;[0m                           &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_edit_previous_donation_as_existing_user()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mLogged out Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mValidate the user able to see the welcome message as a new user&amp#27;[0m                            &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_see_the_welcome_message_as_a_new_user()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: Home Page is not loaded or check the Web Element...!!! expected [Make a new one time donation] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_see_the_welcome_message_as_a_new_user(StepDefsIndividualUser.java:51)
+	at ✽.Validate the user able to see the welcome message as a new user(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:19)
+&amp#27;[0m
+
+    Embedding FailScreenshot [image/png 33147 bytes]
+
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mValidate the user able donate as new user&amp#27;[0m                                                   &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_donate_as_new_user()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mLogged out Successfully as &amp#27;[0m&amp#27;[36m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[36m user&amp#27;[0m                                                &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Oct 23, 2024 3:51:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:51:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Oct 23, 2024 3:51:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:51:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c8881944793f10066ae72c15c10c377, getElementText {id=f.E744BED098692CDB3386FDFE300B630A.d.C5DBE05B35920D3DE69D087328AEA478.e.46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\SXP8EWG\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50777}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50777/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9c8881944793f10066ae72c15c10c377)] -> xpath: //a[@id='modalLogout__button']]
+Session ID: 9c8881944793f10066ae72c15c10c377
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at org.thd.hfcm.utils.SeleniumHelper.getTextFromElement(SeleniumHelper.java:162)
+	at org.thd.hfcm.pageObjects.HomePage.getNewDonationWelcomeMsg(HomePage.java:76)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_see_the_welcome_message_as_a_new_user(StepDefsIndividualUser.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate that Existing user home page presents Latest Donation and Edit donation button&quot;, &quot;Login as a Individual in HomerFund&quot;](4)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="0.013">
+    <system-out><![CDATA[
+@all @individual @IndividualOneTimeDonation
+Scenario: Validate Individual User create One time donation                                                       &amp#27;[90m# src/test/resources/features/IndividualUser.feature:30&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Individual User create One time donation&quot;, &quot;Login as a Individual in HomerFund&quot;](5)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="35.407">
+    <system-out><![CDATA[
+@all @individual @IndividualRecurringDonation
+Scenario: Validate Individual user create Recurring donation and verify the latest donation present in Home Page    &amp#27;[90m# src/test/resources/features/IndividualUser.feature:36&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                                         &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                                       &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                                 &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                               &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user Successfully redirects to Review page after &amp#27;[0m&amp#27;[32m&amp#27;[1m"Unconditional OneTimeDonation"&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mValidate the user able to submit after &amp#27;[0m&amp#27;[32m&amp#27;[1m"OneTimeDonation"&amp#27;[0m                                                    &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_submit_after(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mLogged out Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+Exception ocurred:: Failed to click the element using Selenium click method, so using Action Class of Selenium...!!!
+Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='root']//div[@id='donateList__text']/span (tried for 10 second(s) with 1000 milliseconds interval)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: driver.version: unknown
+]]></system-out>
+    <system-err><![CDATA[Oct 23, 2024 3:51:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:51:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Oct 23, 2024 3:51:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:51:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Individual user create Recurring donation and verify the latest donation present in Home Page&quot;, &quot;Login as a Individual in HomerFund&quot;](6)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="33.092">
+    <failure message="Donation Page is not loaded...!!! expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the "Individual" user Successfully redirects to Review page after "Unconditional RecurringDonation"(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:37)
+]]></failure>
+    <system-out><![CDATA[
+@all @individual @IndividualRecurringDonationErrorPopup
+Scenario: Validate Popup when user enter donation with an amount greater than 500 in Recurring Donation           &amp#27;[90m# src/test/resources/features/IndividualUser.feature:43&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                                       &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                               &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mValidate the &amp#27;[0m&amp#27;[31m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[31m user Successfully redirects to Review page after &amp#27;[0m&amp#27;[31m&amp#27;[1m"Unconditional RecurringDonation"&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(java.lang.String,java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the "Individual" user Successfully redirects to Review page after "Unconditional RecurringDonation"(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:37)
+&amp#27;[0m
+
+    Embedding FailScreenshot [image/png 18710 bytes]
+
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mValidate the user able to submit after &amp#27;[0m&amp#27;[36m&amp#27;[1m"RecurringDonation"&amp#27;[0m                                                    &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_submit_after(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mValidate the latest donation should be displayed on Home Page after &amp#27;[0m&amp#27;[36m&amp#27;[1m"RecurringDonation"&amp#27;[0m                       &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_latest_donation_should_be_displayed_on_home_page_after(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mLogged out Successfully as &amp#27;[0m&amp#27;[36m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[36m user&amp#27;[0m                                                                  &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+Exception ocurred:: Failed to click the element using Selenium click method, so using Action Class of Selenium...!!!
+Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='root']//div[@id='donateList__text']/span (tried for 10 second(s) with 1000 milliseconds interval)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: driver.version: unknown
+]]></system-out>
+    <system-err><![CDATA[Oct 23, 2024 3:52:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:52:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Popup when user enter donation with an amount greater than 5000 in One Time donation&quot;, &quot;Login as a Individual in HomerFund&quot;](7)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="17.443">
+    <system-out><![CDATA[
+@all @individual @IndividualOneTimeDonationErrorPopup
+Scenario: Validate Popup when user enter donation with an amount greater than 5000 in One Time donation         &amp#27;[90m# src/test/resources/features/IndividualUser.feature:49&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                                     &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                             &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user Successfully redirects to Review page after &amp#27;[0m&amp#27;[32m&amp#27;[1m"Conditional OneTimeDonation"&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mValidate Popup should be displayed for limit exceed after &amp#27;[0m&amp#27;[32m&amp#27;[1m"OneTimeDonation"&amp#27;[0m                               &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_popup_should_be_displayed_for_limit_exceed_after(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mLogged out Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                              &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mValidate the &amp#27;[0m&amp#27;[31m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[31m user Successfully redirects to Review page after &amp#27;[0m&amp#27;[31m&amp#27;[1m"Conditional RecurringDonation"&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(java.lang.String,java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the "Individual" user Successfully redirects to Review page after "Conditional RecurringDonation"(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:44)
+&amp#27;[0m
+
+    Embedding FailScreenshot [image/png 18710 bytes]
+
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mValidate Popup should be displayed for limit exceed after &amp#27;[0m&amp#27;[36m&amp#27;[1m"RecurringDonation"&amp#27;[0m                               &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_popup_should_be_displayed_for_limit_exceed_after(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mLogged out Successfully as &amp#27;[0m&amp#27;[36m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[36m user&amp#27;[0m                                                                &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Oct 23, 2024 3:52:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:52:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Popup when user enter donation with an amount greater than 500 in Recurring Donation&quot;, &quot;Login as a Individual in HomerFund&quot;](8)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="5.223">
+    <failure message="Donation Page is not loaded...!!! expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the "Individual" user Successfully redirects to Review page after "Conditional RecurringDonation"(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:44)
+]]></failure>
+    <system-out><![CDATA[
+@all @individual @IndividualDecimalErrorPopup
+Scenario: Validate Popup when user enter donation amount in decimal                                                     &amp#27;[90m# src/test/resources/features/IndividualUser.feature:55&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Oct 23, 2024 3:53:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:53:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Popup when user enter donation amount in decimal&quot;, &quot;Login as a Individual in HomerFund&quot;](9)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="24.794">
+    <system-out><![CDATA[
+@all @individual @IndividualConfirmationPage
+Scenario: Validate the Confirmation page                                                                                                    &amp#27;[90m# src/test/resources/features/IndividualUser.feature:61&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                                             &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                                     &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                                                                 &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user Popup message should be displayed for attempting to enter a decimal amount&amp#27;[0m         &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_as_user_popup_message_should_be_displayed_for_attempting_to_enter_a_decimal_amount(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                                                         &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mValidate as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user Whole number amount is accepted without Popup after &amp#27;[0m&amp#27;[32m&amp#27;[1m"Unconditional OneTimeDonation"&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_as_user_whole_number_amount_is_accepted_without_popup_after(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user Confirmation page match the information entered for the donation after &amp#27;[0m&amp#27;[32m&amp#27;[1m"Unconditional OneTimeDonation"&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_as_user_confirmation_page_match_the_information_entered_for_the_donation_after(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mLogged out Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                      &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mLogged out Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                                          &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Oct 23, 2024 3:53:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:53:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate the Confirmation page&quot;, &quot;Login as a Individual in HomerFund&quot;](10)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="1.525">
+    <system-out><![CDATA[
+@all @individual @IndividualPostSubmissionMsg
+Scenario: Validate success message after successful donation and to check Go Back Home link                       &amp#27;[90m# src/test/resources/features/IndividualUser.feature:66&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate success message after successful donation and to check Go Back Home link&quot;, &quot;Login as a Individual in HomerFund&quot;](11)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="17.234">
+    <system-out><![CDATA[
+@all @individual @IndividualDonateAccess
+Scenario: Validate Donate page through Menu and Link in Homepage                                                 &amp#27;[90m# src/test/resources/features/IndividualUser.feature:72&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                                       &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                                                      &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                               &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                              &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user Successfully redirects to Review page after &amp#27;[0m&amp#27;[32m&amp#27;[1m"Unconditional OneTimeDonation"&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mValidate the user able to submit after &amp#27;[0m&amp#27;[32m&amp#27;[1m"OneTimeDonation"&amp#27;[0m                                                    &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_submit_after(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mLogged out Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                                &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Oct 23, 2024 3:53:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:53:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Oct 23, 2024 3:53:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:53:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate the amount increase decrease button&quot;, &quot;Login as a Individual in HomerFund&quot;](12)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="32.111">
+    <system-out><![CDATA[
+@all @individual @IndividualDonateAmountIncrease
+Scenario: Validate the amount increase decrease button                                  &amp#27;[90m# src/test/resources/features/IndividualUser.feature:79&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mOpen Browser and Launch Application&amp#27;[0m                                             &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.open_Browser_and_Launch_Application()&amp#27;[0m
+Exception ocurred:: Failed to click the element using Selenium click method, so using Action Class of Selenium...!!!
+Expected condition failed: waiting for element to be clickable: By.id: addDonation__modalButton (tried for 10 second(s) with 1000 milliseconds interval)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: driver.version: unknown
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mLogin as a &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                                     &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.enter_The_Credentials(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mValidate the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user Successfully redirects to Donation page&amp#27;[0m           &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_donation_page(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mValidate the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user Successfully increase and Decrease Donation Amount&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_increase_and_decrease_donation_amount(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mValidate the user able to submit after &amp#27;[0m&amp#27;[32m&amp#27;[1m"OneTimeDonation"&amp#27;[0m                          &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_submit_after(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mLogged out Successfully as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[32m user&amp#27;[0m                                      &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Oct 23, 2024 3:54:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 23, 2024 3:54:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.101. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Donate page through Menu and Link in Homepage&quot;, &quot;Login as a Individual in HomerFund&quot;](13)" classname="org.thd.hfcm.runner.CucumberRunnerTests" time="37.721">
+    <failure message="Donation Page is not loaded...!!! expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_donation_page_after_access_through_donate_link(StepDefsIndividualUser.java:152)
+	at ✽.Validate the "Individual" user Successfully redirects to Donation page after access through Donate link(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:73)
+]]></failure>
+    <system-out><![CDATA[  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mValidate the &amp#27;[0m&amp#27;[31m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[31m user Successfully redirects to Donation page after access through Donate link&amp#27;[0m   &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_donation_page_after_access_through_donate_link(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_donation_page_after_access_through_donate_link(StepDefsIndividualUser.java:152)
+	at ✽.Validate the "Individual" user Successfully redirects to Donation page after access through Donate link(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:73)
+&amp#27;[0m
+
+    Embedding FailScreenshot [image/png 157626 bytes]
+
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mValidate the &amp#27;[0m&amp#27;[36m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[36m user Successfully redirects to Review page after &amp#27;[0m&amp#27;[36m&amp#27;[1m"Unconditional OneTimeDonation"&amp#27;[0m &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mValidate the user able to submit after &amp#27;[0m&amp#27;[36m&amp#27;[1m"OneTimeDonation"&amp#27;[0m                                                   &amp#27;[90m# org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_submit_after(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mLogged out Successfully as &amp#27;[0m&amp#27;[36m&amp#27;[1m"Individual"&amp#27;[0m&amp#27;[36m user&amp#27;[0m                                                               &amp#27;[90m# org.thd.hfcm.definitions.CommonDefinitions.User_logged_out_successfully(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

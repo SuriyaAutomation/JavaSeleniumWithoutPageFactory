@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 231.7 s <<< FAILURE! -- in TestSuite
+org.thd.hfcm.runner.CucumberRunnerTests.runScenario["Validate that new User Home page Presents with Welcome Message and Make donation button", "Login as a Individual in HomerFund"](3) -- Time elapsed: 20.36 s <<< FAILURE!
+java.lang.AssertionError: Home Page is not loaded or check the Web Element...!!! expected [Make a new one time donation] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_see_the_welcome_message_as_a_new_user(StepDefsIndividualUser.java:51)
+	at ✽.Validate the user able to see the welcome message as a new user(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:19)
+
+org.thd.hfcm.runner.CucumberRunnerTests.runScenario["Validate Individual user create Recurring donation and verify the latest donation present in Home Page", "Login as a Individual in HomerFund"](6) -- Time elapsed: 33.09 s <<< FAILURE!
+java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the "Individual" user Successfully redirects to Review page after "Unconditional RecurringDonation"(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:37)
+
+org.thd.hfcm.runner.CucumberRunnerTests.runScenario["Validate Popup when user enter donation with an amount greater than 500 in Recurring Donation", "Login as a Individual in HomerFund"](8) -- Time elapsed: 5.223 s <<< FAILURE!
+java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+	at ✽.Validate the "Individual" user Successfully redirects to Review page after "Conditional RecurringDonation"(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:44)
+
+org.thd.hfcm.runner.CucumberRunnerTests.runScenario["Validate Donate page through Menu and Link in Homepage", "Login as a Individual in HomerFund"](13) -- Time elapsed: 37.72 s <<< FAILURE!
+java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_donation_page_after_access_through_donate_link(StepDefsIndividualUser.java:152)
+	at ✽.Validate the "Individual" user Successfully redirects to Donation page after access through Donate link(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:73)
+

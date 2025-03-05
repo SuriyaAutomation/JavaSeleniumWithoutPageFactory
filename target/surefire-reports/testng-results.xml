@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="9" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-23T15:50:49 GMT+05:30" name="Surefire suite" finished-at="2024-10-23T15:54:39 GMT+05:30" duration-ms="230632">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-10-23T15:50:49 GMT+05:30" name="Surefire test" finished-at="2024-10-23T15:54:39 GMT+05:30" duration-ms="230632">
+      <class name="org.thd.hfcm.runner.CucumberRunnerTests">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:50:49 GMT+05:30" name="setUpClass" finished-at="2024-10-23T15:50:50 GMT+05:30" duration-ms="659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@760245e1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:50:50 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:51:21 GMT+05:30" duration-ms="31198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Login and Logout of the application with "Individual" credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:50:50 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:51:19 GMT+05:30" duration-ms="29731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the Dashboard in Homepage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:51:19 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:51:41 GMT+05:30" duration-ms="21704" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that new User Home page Presents with Welcome Message and Make donation button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Home Page is not loaded or check the Web Element...!!! expected [Make a new one time donation] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Home Page is not loaded or check the Web Element...!!! expected [Make a new one time donation] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_able_to_see_the_welcome_message_as_a_new_user(StepDefsIndividualUser.java:51)
+at ✽.Validate the user able to see the welcome message as a new user(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:51:21 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:51:41 GMT+05:30" duration-ms="20366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that Existing user home page presents Latest Donation and Edit donation button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:51:41 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:52:17 GMT+05:30" duration-ms="35439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Individual User create One time donation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:51:41 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:52:50 GMT+05:30" duration-ms="68491" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Individual user create Recurring donation and verify the latest donation present in Home Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Donation Page is not loaded...!!! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+at ✽.Validate the "Individual" user Successfully redirects to Review page after "Unconditional RecurringDonation"(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:37)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:52:17 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:53:12 GMT+05:30" duration-ms="55775" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Popup when user enter donation with an amount greater than 500 in Recurring Donation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Donation Page is not loaded...!!! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_review_page_after(StepDefsIndividualUser.java:75)
+at ✽.Validate the "Individual" user Successfully redirects to Review page after "Conditional RecurringDonation"(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:44)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:52:50 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:53:07 GMT+05:30" duration-ms="17459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Popup when user enter donation with an amount greater than 5000 in One Time donation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:53:07 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:53:37 GMT+05:30" duration-ms="30032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Popup when user enter donation amount in decimal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:53:12 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:53:39 GMT+05:30" duration-ms="26323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the Confirmation page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:53:37 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:53:56 GMT+05:30" duration-ms="18751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate success message after successful donation and to check Go Back Home link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:53:39 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:54:34 GMT+05:30" duration-ms="54958" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Donate page through Menu and Link in Homepage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Donation Page is not loaded...!!! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Donation Page is not loaded...!!! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.thd.hfcm.definitions.StepDefsIndividualUser.validate_the_user_successfully_redirects_to_donation_page_after_access_through_donate_link(StepDefsIndividualUser.java:152)
+at ✽.Validate the "Individual" user Successfully redirects to Donation page after access through Donate link(file:///C:/THD_GithubProjects/ICC-HFCM_SeleniumTestingAutomation/ICC-HFCM_SeleniumTestingAutomation/HomerFundContributionManager/src/test/resources/features/IndividualUser.feature:73)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:53:56 GMT+05:30" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-23T15:54:28 GMT+05:30" duration-ms="32125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the amount increase decrease button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login as a Individual in HomerFund"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.thd.hfcm.runner.CucumberRunnerTests@402bba4f]" started-at="2024-10-23T15:54:34 GMT+05:30" name="tearDownClass" finished-at="2024-10-23T15:54:39 GMT+05:30" duration-ms="5852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.thd.hfcm.runner.CucumberRunnerTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
