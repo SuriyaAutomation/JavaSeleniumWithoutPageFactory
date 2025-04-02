@@ -22,6 +22,17 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class SeleniumHelper {
 
 	public static String filePath = System.getProperty("user.dir")+ 
@@ -364,5 +375,43 @@ public class SeleniumHelper {
 		}
 		return attributeValue;
 	}
+	
+	// Custom logging methods with HTML color styling
+    public static void logInfo(String message) {
+        ExtentCucumberAdapter.getCurrentStep().log(Status.INFO, "<span style='color:blue; font-weight:bold;'>" + message + "</span>");
+    }
+
+    public static void logPass(String message) {
+        ExtentCucumberAdapter.getCurrentStep().log(Status.PASS, "<span style='color:green; font-weight:bold;'>" + message + "</span>");
+    }
+
+    public static void logFail(String message, WebDriver driver) {
+        // Capture screenshot & log failure with colored text
+        String screenshotPath = captureScreenshot(driver);
+        ExtentCucumberAdapter.getCurrentStep().log(Status.FAIL,
+                "<span style='color:red; font-weight:bold;'>" + message + "</span>",
+                MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+    }
+
+    // Screenshot method
+    public static String captureScreenshot(WebDriver driver) {
+        String screenshotDir = System.getProperty("user.dir") + "/target/screenshots/";
+        File screenshotFolder = new File(screenshotDir);
+        if (!screenshotFolder.exists()) {
+            screenshotFolder.mkdirs();  // Create folder if it doesn't exist
+        }
+
+        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+        String screenshotPath = screenshotDir + "Screenshot_" + timestamp + ".png";
+
+        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File destFile = new File(screenshotPath);
+        try {
+            FileUtils.copyFile(srcFile, destFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return screenshotPath;
+    }
 
 }
