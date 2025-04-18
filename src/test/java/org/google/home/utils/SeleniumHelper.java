@@ -53,11 +53,13 @@ public class SeleniumHelper {
 		return new FluentWait<>(driver).withTimeout(Duration.ofSeconds(timeout)).pollingEvery(Duration.ofSeconds(2));
 	}
 
+	
 	// Wait for WebElements
 	public static WebElement waitAndcheckElementIsPresent(WebDriver driver, By by, long timeout) {
 		wdw = explicitWait(driver, timeout);
 		return wdw.until(ExpectedConditions.presenceOfElementLocated(by));
 	}
+	
 	
 	public static List<WebElement> waitAndCheckElementsPresence(WebDriver driver, By by, long timeout) {
 		wdw = explicitWait(driver, timeout);
